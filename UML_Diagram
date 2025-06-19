@@ -1,0 +1,43 @@
++------------------+
+|      Main        |
++------------------+
+| +main(args: String[]): void |
++------------------+
+           |
+           v
++------------------------+
+|   UserInterface        |
++------------------------+
+| +start(): void         |
+| +addUser(): void       |
+| +showViewingHabits(): void |
+| +changeMovieTitle(): void  |
+| +... (other 6 methods) |
++------------------------+
+           |
+           v
++---------------------------+
+|   DatabaseManager         |
++---------------------------+
+| +connect(): Connection    |
+| +initializeDatabase(): void |
++---------------------------+
+
+Classes in models package:
+  
++---------------------+          +---------------------+          +-------------------------+
+|       User          |          |       Movie         |          |     ViewingHabit        |
++---------------------+          +---------------------+          +-------------------------+
+| -userID: int        |          | -movieID: int       |          | -userID: int            |
+| -age: int           |          | -title: String      |          | -movieID: int           |
+| -email: String      |          | -releaseYear: int   |          | -minutesWatched: int    |
++---------------------+          | -director: String   |          +-------------------------+
+| +getUserID(): int   |          | -genre: String      |          | +getUserID(): int       |
+| +getAge(): int      |          +---------------------+          | +getMovieID(): int      |
+| +getEmail(): String |          | +getTitle() ...     |          | +getMinutesWatched()... |
++---------------------+          +---------------------+          +-------------------------+
+
+Relationships:
+- UserInterface uses DatabaseManager
+- UserInterface queries/uses User, Movie, ViewingHabit
+- ViewingHabit has foreign key references to User and Movie
