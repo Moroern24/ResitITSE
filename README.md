@@ -1,7 +1,3 @@
-Вот формализованный `README.md` **без стикеров (эмодзи)**:
-
----
-
 # MovieRater — Java & SQLite Command-Line Application
 
 ## Overview
@@ -103,6 +99,4 @@ The submission consists of the following:
 * This `README.md` file
 * (Optional) Sample dataset script (`sample_data.sql`)
 
----
 
-Готов включить `sample_data.sql`, если ты хочешь сгенерировать тестовые данные. Продолжим?
