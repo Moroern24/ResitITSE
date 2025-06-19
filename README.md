@@ -82,13 +82,6 @@ All computations are performed using SQL and not handled manually in Java code.
 
 ---
 
-## Authors
-
-* \[Your Full Name], Student ID: \[Your ID]
-* \[Teammate Name], Student ID: \[Teammate's ID] (if applicable)
-
----
-
 ## Submission Contents
 
 The submission consists of the following:
